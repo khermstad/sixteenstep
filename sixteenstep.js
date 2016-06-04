@@ -2,7 +2,7 @@
  *
  * Sixteen Step Sequencer
  * @author: Kris Hermstad (krishermstad@gmail.com)
- *
+ * @dateStarted: 6/3/2016
  *
  */
 
