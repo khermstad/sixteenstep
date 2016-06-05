@@ -10,6 +10,8 @@ Tone.Transport.timeSignature = [4, 4];
 Tone.Transport.bpm.value = 120;
 var currentBeat = 0;
 var beatLimit = 15;
+var currentSampleSet = "A.1";
+var currentlyPlaying = false;
 
 // Each button on the sequencer is called a "node."
 // nodeState holds the current state (0 for off, 1 for on) of each node on the sequencer.
@@ -51,12 +53,13 @@ function setNodeState(track, beat, newNodeState){
     nodeState[track][beat] = newNodeState;
 }
 
+// triggerActiveNodes():
 // loops through all samplers in samplerArray and checks if node at beat is ON. (nodeState[track][beat] == 1) -> on
 // if node is ON, the sample is triggered.
 function triggerActiveNodes() {
     for (i = 0; i < samplerArray.length; i++){
         if (nodeState[i][currentBeat] == 1) {
-            samplerArray[i].triggerAttack(currentSet);
+            samplerArray[i].triggerAttack(currentSampleSet);
         }
     }
 }
@@ -72,8 +75,6 @@ function triggerActiveNodes() {
  * @type {Tone.Loop}
  */
 
-var currentlyPlaying = false;
-
 var masterLoop = new Tone.Loop(function(time) {
 
     triggerActiveNodes();
@@ -82,7 +83,8 @@ var masterLoop = new Tone.Loop(function(time) {
 
 }, "16n").start(0);
 
-
+// toggleLoopState():
+// play/pause for mainLoop
 function toggleLoopState(){
     if (currentlyPlaying == false) {
         Tone.Transport.start();
@@ -93,7 +95,6 @@ function toggleLoopState(){
         currentlyPlaying = false;
     }
 }
-
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////   SAMPLERS  ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -107,13 +108,6 @@ function toggleLoopState(){
  *
  * @type {Tone}
  */
-
-
-var currentSet = "A.1";
-
-function setCurrentSet(newSet){
-    currentSet = newSet;
-}
 
 var t0sampler = new Tone.Sampler({
     A : {
@@ -187,7 +181,12 @@ samplerArray = [t0sampler, t1sampler, t2sampler, t3sampler,
 //////////   METHODS  /////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// default currentSampleSet == "A.1"
+function setCurrentSampleSet(newSampleSet){
+    currentSampleSet = newSampleSet;
+}
 
+// updateCurrentBeat():
 function updateCurrentBeat(){
     if (currentBeat < beatLimit){
         currentBeat++;
