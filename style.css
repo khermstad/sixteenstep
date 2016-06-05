@@ -24,14 +24,59 @@
     background-color: rebeccapurple;
 }
 
+/* metronomeNode */
+.metronomeNode{
+    background-color: lightpink;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+
 /* .sequencerPanel: generic panel style for sequencer panels*/
 .sequencerPanel{
     width: 395px;
-    height: 235px;
+    height: 285px;
     border: solid;
-    border-width: 2px;
+    border-width: 1px;
     border-radius: 10px;
     border-color: grey;
-    padding-top: 10px;
-    padding-left: 14px;
+    padding-top: 16px;
+    padding-left:12px;
+    margin-left:auto;
+    margin-right: auto;
+}
+/* .controlPanel: styled panel for main controls (play/pause, etc) */
+.controlPanel{
+    width: 395px;
+    height: 155px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: grey;
+    padding-top: 16px;
+    padding-left:12px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+/* playPauseButton: */
+.playPauseButton{
+    border: none;
+    width: 60px;
+    height: 60px;
+    background-color: green;
+    border-radius: 100px;
+
+    color: white;
+}
+
+
+
+/* HR line style */
+.lineHR{
+    color: grey;
+    width: 100px;
 }
