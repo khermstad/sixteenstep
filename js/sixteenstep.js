@@ -209,25 +209,25 @@ function reset(){
 // updateMetronome();
 
 function setMetronome() {
-    if (currentBeat == 0){
+    if (currentBeat == 0) {
         document.getElementById("m15").style.backgroundColor = "lightpink";
         document.getElementById("m0").style.backgroundColor = "red";
     }
-    if (currentBeat == 1){
+    if (currentBeat == 1) {
         document.getElementById("m0").style.backgroundColor = "lightpink";
         document.getElementById("m1").style.backgroundColor = "red";
     }
-    if (currentBeat == 2){
+    if (currentBeat == 2) {
         document.getElementById("m1").style.backgroundColor = "lightpink";
         document.getElementById("m2").style.backgroundColor = "red";
     }
-    if (currentBeat == 3){
+    if(currentBeat == 3) {
         document.getElementById("m2").style.backgroundColor = "lightpink";
         document.getElementById("m3").style.backgroundColor = "red";
     }
-    if (currentBeat == 4){
-        document.getElementById("m3").style.backgroundColor = "lightpink";
-        document.getElementById("m4").style.backgroundColor = "red";
+    if (currentBeat == 4) {
+            document.getElementById("m3").style.backgroundColor = "lightpink";
+            document.getElementById("m4").style.backgroundColor = "red";
     }
     if (currentBeat == 5){
         document.getElementById("m4").style.backgroundColor = "lightpink";
