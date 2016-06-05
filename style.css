@@ -1,3 +1,4 @@
+/* .trackNode: for nodes other than the quarternote nodes */
 .trackNode{
     background-color: lightgray;
     width: 20px;
@@ -5,10 +6,32 @@
     border: none;
     border-radius: 2px;
 }
+
+.trackNode:hover{
+    background-color: limegreen;
+}
+
+/* .trackNode4n: for nodes at the quarter note downbeats on the sequencer. emphasised by different color */
 .trackNode4n{
     background-color: dimgrey;
     border: none;
     width: 20px;
     height: 20px;
     border-radius: 2px;
+}
+
+.trackNode4n:hover{
+    background-color: rebeccapurple;
+}
+
+/* .sequencerPanel: generic panel style for sequencer panels*/
+.sequencerPanel{
+    width: 395px;
+    height: 235px;
+    border: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: grey;
+    padding-top: 10px;
+    padding-left: 14px;
 }
