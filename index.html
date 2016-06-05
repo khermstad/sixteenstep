@@ -206,29 +206,36 @@
     <button class="trackNode" id="9_15" onclick="toggleNodeState(9,15);"></button>
     <br><hr class="lineHR"/>
 
-    <div class="metronomeNode"></div>
-    <div class="metronomeNode"></div>
-    <div class="metronomeNode"></div>
-    <div class="metronomeNode"></div>
-    <div class="metronomeNode"></div>
-    <div class="metronomeNode"></div>
-    <div class="metronomeNode"></div>
-    <div class="metronomeNode"></div>
-    <div class="metronomeNode"></div>
-    <div class="metronomeNode"></div>
-    <div class="metronomeNode"></div>
-    <div class="metronomeNode"></div>
-    <div class="metronomeNode"></div>
-    <div class="metronomeNode"></div>
-    <div class="metronomeNode"></div>
-    <div class="metronomeNode"></div>
+    <div class="metronomeNode" id="m0" value="0"></div>
+    <div class="metronomeNode" id="m1" value="1"></div>
+    <div class="metronomeNode" id="m2" value="2"></div>
+    <div class="metronomeNode" id="m3" value="3"></div>
+    <div class="metronomeNode" id="m4" value="4"></div>
+    <div class="metronomeNode" id="m5" value="5"></div>
+    <div class="metronomeNode" id="m6" value="6"></div>
+    <div class="metronomeNode" id="m7" value="7"></div>
+    <div class="metronomeNode" id="m8" value="8"></div>
+    <div class="metronomeNode" id="m9" value="9"></div>
+    <div class="metronomeNode" id="m10" value="10"></div>
+    <div class="metronomeNode" id="m11" value="11"></div>
+    <div class="metronomeNode" id="m12" value="12"></div>
+    <div class="metronomeNode" id="m13" value="13"></div>
+    <div class="metronomeNode" id="m14" value="14"></div>
+    <div class="metronomeNode" id="m15" value="15"></div>
 
 </div>
 <br>
 <div class="controlPanel">
-    <input type="button" class="playPauseButton" value="PLAY"/>
+    <input type="button" class="controlPanelCircleButton" id="playButton" onclick="startLoop();" value="PLAY"/>
+    <input type="button" class="controlPanelCircleButton" id="pauseButton" onclick="stopLoop();" value="PAUSE"/>
+    <input type="button" class="controlPanelCircleButton" id="bpmInc" onclick="increaseBpm();" value="BPM +"/>
+    <input type="button" class="controlPanelCircleButton" id="bpmDec" onclick="decreaseBpm();" value="BPM -"/>
+    <input type="button" class="controlPanelCircleButton" id="volInc" onclick="increaseVolume();" value="VOL +"/>
+    <input type="button" class="controlPanelCircleButton" id="volDec" onclick="decreaseVolume();" value="VOL -"/>
 </div>
-
-
+<br>
+<center>
+<button class="controlPanelCircleButton" id="resetButton" onclick="reset();">RESET</button>
+</center>
 </body>
 </html>

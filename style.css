@@ -1,3 +1,4 @@
+
 /* .trackNode: for nodes other than the quarternote nodes */
 .trackNode{
     background-color: lightgray;
@@ -11,6 +12,10 @@
     background-color: limegreen;
 }
 
+.trackNode:focus{
+    outline: 0;
+}
+
 /* .trackNode4n: for nodes at the quarter note downbeats on the sequencer. emphasised by different color */
 .trackNode4n{
     background-color: dimgrey;
@@ -22,6 +27,10 @@
 
 .trackNode4n:hover{
     background-color: rebeccapurple;
+}
+
+.trackNode4n:focus{
+    outline: 0;
 }
 
 /* metronomeNode */
@@ -51,7 +60,7 @@
 /* .controlPanel: styled panel for main controls (play/pause, etc) */
 .controlPanel{
     width: 395px;
-    height: 155px;
+    height: 75px;
     border: solid;
     border-width: 1px;
     border-radius: 10px;
@@ -62,18 +71,83 @@
     margin-right: auto;
 }
 
-/* playPauseButton: */
-.playPauseButton{
-    border: none;
+/* controlPanelCircleButton */
+.controlPanelCircleButton{
     width: 60px;
     height: 60px;
-    background-color: green;
+    border: none;
     border-radius: 100px;
-
     color: white;
+    font-size: 14px;
+    font-family: "Courier 10 Pitch";
+    weight: bold;
+}
+
+.controlPanelCircleButton:focus{
+    outline: 0;
+}
+
+/* .controlPanelCircleButton#playButton: */
+.controlPanelCircleButton#playButton{
+    background-color: forestgreen;
+}
+
+.controlPanelCircleButton#playButton:hover{
+    background-color: darkgreen;
 }
 
 
+/* .controlPanelCircleButton#pauseButton: */
+.controlPanelCircleButton#pauseButton{
+    background-color: orange;
+}
+
+.controlPanelCircleButton#pauseButton:hover{
+    background-color: darkorange;
+}
+
+/* .controlPanelCircleButton#bpmInc: */
+.controlPanelCircleButton#bpmInc{
+    background-color: lightblue;
+}
+
+.controlPanelCircleButton#bpmInc:hover{
+    background-color: cadetblue;
+}
+/* .controlPanelCircleButton#bpmDec: */
+.controlPanelCircleButton#bpmDec{
+    background-color: lightblue;
+}
+
+.controlPanelCircleButton#bpmDec:hover{
+    background-color: cadetblue;
+}
+
+/* .controlPanelCircleButton#volInc: */
+.controlPanelCircleButton#volInc{
+    background-color: mediumpurple;
+}
+
+.controlPanelCircleButton#volInc:hover{
+    background-color: purple;
+}
+/* .controlPanelCircleButton#volDec: */
+.controlPanelCircleButton#volDec{
+    background-color: mediumpurple;
+}
+
+.controlPanelCircleButton#volDec:hover{
+    background-color: purple;
+}
+
+/* .controlPanelCircleButton#resetButton: */
+.controlPanelCircleButton#resetButton{
+    background-color: red;
+}
+
+.controlPanelCircleButton#resetButton:hover{
+    background-color: darkred;
+}
 
 /* HR line style */
 .lineHR{
