@@ -1,0 +1,14 @@
+.trackNode{
+    background-color: lightgray;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 2px;
+}
+.trackNode4n{
+    background-color: dimgrey;
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+}
