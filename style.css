@@ -12,6 +12,7 @@
     background-color: limegreen;
 }
 
+/* :focus outline: 0 -> removes the blue line that surrounds an element when clicked in a browser */
 .trackNode:focus{
     outline: 0;
 }

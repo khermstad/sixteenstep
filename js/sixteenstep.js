@@ -189,6 +189,9 @@ function increaseBpm(){
 
 function decreaseBpm(){
     Tone.Transport.bpm.value -= 5;
+    if (Tone.Transport.bpm.value < 5){
+        Tone.Transport.bpm.value = 5;
+    }
 }
 
 function increaseVolume(){
@@ -271,3 +274,4 @@ function setMetronome() {
         document.getElementById("m15").style.backgroundColor = "red";
     }
 }
+
