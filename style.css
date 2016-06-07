@@ -1,7 +1,7 @@
 
 /* .trackNode: for nodes other than the quarternote nodes */
 .trackNode{
-    background-color: lightgray;
+    background-color: #D3D3D3; /* lightgray */
     width: 20px;
     height: 20px;
     border: none;
@@ -9,7 +9,7 @@
 }
 
 .trackNode:hover{
-    background-color: limegreen;
+    background-color: #32CD32; /* limegreen */
 }
 
 /* :focus outline: 0 -> removes the blue line that surrounds an element when clicked in a browser */
@@ -19,7 +19,7 @@
 
 /* .trackNode4n: for nodes at the quarter note downbeats on the sequencer. emphasised by different color */
 .trackNode4n{
-    background-color: dimgrey;
+    background-color: #696969; /* dim grey */
     border: none;
     width: 20px;
     height: 20px;
@@ -27,7 +27,7 @@
 }
 
 .trackNode4n:hover{
-    background-color: rebeccapurple;
+    background-color: #663399; /* rebeccapurple */
 }
 
 .trackNode4n:focus{
@@ -36,7 +36,7 @@
 
 /* metronomeNode */
 .metronomeNode{
-    background-color: lightpink;
+    background-color: #FFB6C1; /* lightpink */
     width: 20px;
     height: 20px;
     border: none;
@@ -65,7 +65,7 @@
     border: solid;
     border-width: 1px;
     border-radius: 10px;
-    border-color: grey;
+    border-color: #808080; /* grey */
     padding-top: 16px;
     padding-left:12px;
     margin-left:auto;
@@ -78,7 +78,7 @@
     height: 60px;
     border: none;
     border-radius: 100px;
-    color: white;
+    color: 	#FFFFFF; /* white */
     font-size: 14px;
     font-family: "Courier 10 Pitch";
     weight: bold;
@@ -90,68 +90,68 @@
 
 /* .controlPanelCircleButton#playButton: */
 .controlPanelCircleButton#playButton{
-    background-color: forestgreen;
+    background-color: #228B22; /* forestgreen */
 }
 
 .controlPanelCircleButton#playButton:hover{
-    background-color: darkgreen;
+    background-color: #006400; /* darkgreen */
 }
 
 
 /* .controlPanelCircleButton#pauseButton: */
 .controlPanelCircleButton#pauseButton{
-    background-color: orange;
+    background-color: #FFA500; /* orange */
 }
 
 .controlPanelCircleButton#pauseButton:hover{
-    background-color: darkorange;
+    background-color: #FF8C00; /* darkorange */
 }
 
 /* .controlPanelCircleButton#bpmInc: */
 .controlPanelCircleButton#bpmInc{
-    background-color: lightblue;
+    background-color: #ADD8E6; /* lightblue */
 }
 
 .controlPanelCircleButton#bpmInc:hover{
-    background-color: cadetblue;
+    background-color: #5F9EA0; /* cadetblue */
 }
 /* .controlPanelCircleButton#bpmDec: */
 .controlPanelCircleButton#bpmDec{
-    background-color: lightblue;
+    background-color: #ADD8E6; /* lightblue */
 }
 
 .controlPanelCircleButton#bpmDec:hover{
-    background-color: cadetblue;
+    background-color: #5F9EA0; /* cadetblue */
 }
 
 /* .controlPanelCircleButton#volInc: */
 .controlPanelCircleButton#volInc{
-    background-color: mediumpurple;
+    background-color: #9370DB; /* mediumpurple */
 }
 
 .controlPanelCircleButton#volInc:hover{
-    background-color: purple;
+    background-color: #800080; /* purple */
 }
 /* .controlPanelCircleButton#volDec: */
 .controlPanelCircleButton#volDec{
-    background-color: mediumpurple;
+    background-color: #9370DB; /* mediumpurple */
 }
 
 .controlPanelCircleButton#volDec:hover{
-    background-color: purple;
+    background-color: #800080; /* purple */
 }
 
 /* .controlPanelCircleButton#resetButton: */
 .controlPanelCircleButton#resetButton{
-    background-color: red;
+    background-color: #FF0000; /* red */
 }
 
 .controlPanelCircleButton#resetButton:hover{
-    background-color: darkred;
+    background-color: 	#8B0000; /* darkred */
 }
 
 /* HR line style */
 .lineHR{
-    color: grey;
+    color: #808080; /* grey */
     width: 100px;
 }
