@@ -80,7 +80,7 @@
     border-radius: 100px;
     color: 	#FFFFFF; /* white */
     font-size: 14px;
-    font-family: "Courier 10 Pitch";
+    font-family: "Courier 10 Pitch", SansSerif;
     weight: bold;
 }
 
