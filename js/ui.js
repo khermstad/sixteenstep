@@ -9,7 +9,7 @@ var trackNodeONColor = "#32CD32"; /* limegreen */
 
 // quarter(4n) nodes
 var trackNode4nOFFColor = "#696969"; /* dim grey */
-var trackNode4nONColor = "#663399"; /* rebeccapurple */
+var trackNode4nONColor = "#FF8C00"; /* darkorange */
 
 function UItrackNode4nON(track, beat){
     var nodeId = track.toString() + beat.toString();

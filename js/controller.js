@@ -18,6 +18,7 @@ function toggleNode4n(track, beat){
 function toggleNode(track, beat){
 
     toggleNodeState(track, beat);
+
     if (getNodeState(track, beat) == 1){
         UItrackNodeON(track, beat);
     }

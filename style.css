@@ -27,7 +27,7 @@
 }
 
 .trackNode4n:hover{
-    background-color: #663399; /* rebeccapurple */
+    background-color: #FF8C00; /* darkorange */
 }
 
 .trackNode4n:focus{
@@ -48,7 +48,7 @@
 /* .sequencerPanel: generic panel style for sequencer panels*/
 .sequencerPanel{
     width: 395px;
-    height: 285px;
+    height: 265px;
     border: solid;
     border-width: 1px;
     border-radius: 10px;
