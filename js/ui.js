@@ -5,17 +5,31 @@
 
 // non quarter(4n) nodes
 var trackNodeOFFColor = "#D3D3D3"; /* lightgray */
-var trackNodeONColor = "#32CD32;"; /* limegreen */
+var trackNodeONColor = "#32CD32"; /* limegreen */
 
 // quarter(4n) nodes
 var trackNode4nOFFColor = "#696969"; /* dim grey */
 var trackNode4nONColor = "#663399"; /* rebeccapurple */
 
-function trackNodeON() {
-
+function UItrackNode4nON(track, beat){
+    var nodeId = track.toString() + beat.toString();
+    document.getElementById(nodeId).style.backgroundColor = trackNode4nONColor;
 }
 
+function UItrackNode4nOFF(track, beat){
+    var nodeId = track.toString() + beat.toString();
+    document.getElementById(nodeId).style.backgroundColor = trackNode4nOFFColor;
+}
 
+function UItrackNodeON(track, beat){
+    var nodeId = track.toString() + beat.toString();
+    document.getElementById(nodeId).style.backgroundColor = trackNodeONColor;
+}
+
+function UItrackNodeOFF(track, beat){
+    var nodeId = track.toString() + beat.toString();
+    document.getElementById(nodeId).style.backgroundColor = trackNodeOFFColor;
+}
 
 // METRONOME UI
 // declare all colors here, so refactoring style will be easier.

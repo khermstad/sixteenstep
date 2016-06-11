@@ -6,6 +6,7 @@
     <script type="text/javascript" src="./js/Tone.js"></script>
     <script type="text/javascript" src="./js/sixteenstep.js"></script>
     <script type="text/javascript" src="./js/ui.js"></script>
+    <script type="text/javascript" src="./js/controller.js"></script>
 
     <meta charset="UTF-8">
     <title>sixteen step sequencer</title>
@@ -18,193 +19,193 @@
 <div class="sequencerPanel">
 
     <!-- Track 0 -->
-    <button class="trackNode4n" id="0_0" onclick="toggleNodeState(0,0);"></button>
-    <button class="trackNode" id="0_1" onclick="toggleNodeState(0,1);"></button>
-    <button class="trackNode" id="0_2" onclick="toggleNodeState(0,2);"></button>
-    <button class="trackNode" id="0_3" onclick="toggleNodeState(0,3);"></button>
-    <button class="trackNode4n" id="0_4" onclick="toggleNodeState(0,4);"></button>
-    <button class="trackNode" id="0_5" onclick="toggleNodeState(0,5);"></button>
-    <button class="trackNode" id="0_6" onclick="toggleNodeState(0,6);"></button>
-    <button class="trackNode" id="0_7" onclick="toggleNodeState(0,7);"></button>
-    <button class="trackNode4n" id="0_8" onclick="toggleNodeState(0,8);"></button>
-    <button class="trackNode" id="0_9" onclick="toggleNodeState(0,9);"></button>
-    <button class="trackNode" id="0_10" onclick="toggleNodeState(0,10);"></button>
-    <button class="trackNode" id="0_11" onclick="toggleNodeState(0,11);"></button>
-    <button class="trackNode4n" id="0_12" onclick="toggleNodeState(0,12);"></button>
-    <button class="trackNode" id="0_13" onclick="toggleNodeState(0,13);"></button>
-    <button class="trackNode" id="0_14" onclick="toggleNodeState(0,14);"></button>
-    <button class="trackNode" id="0_15" onclick="toggleNodeState(0,15);"></button>
+    <button class="trackNode4n" id="00" onclick="toggleNode4n(0,0);"></button>
+    <button class="trackNode" id="01" onclick="toggleNode(0,1);"></button>
+    <button class="trackNode" id="02" onclick="toggleNode(0,2);"></button>
+    <button class="trackNode" id="03" onclick="toggleNode(0,3);"></button>
+    <button class="trackNode4n" id="04" onclick="toggleNode4n(0,4);"></button>
+    <button class="trackNode" id="05" onclick="toggleNode(0,5);"></button>
+    <button class="trackNode" id="06" onclick="toggleNode(0,6);"></button>
+    <button class="trackNode" id="07" onclick="toggleNode(0,7);"></button>
+    <button class="trackNode4n" id="08" onclick="toggleNode4n(0,8);"></button>
+    <button class="trackNode" id="09" onclick="toggleNode(0,9);"></button>
+    <button class="trackNode" id="010" onclick="toggleNode(0,10);"></button>
+    <button class="trackNode" id="011" onclick="toggleNode(0,11);"></button>
+    <button class="trackNode4n" id="012" onclick="toggleNode4n(0,12);"></button>
+    <button class="trackNode" id="013" onclick="toggleNode(0,13);"></button>
+    <button class="trackNode" id="014" onclick="toggleNode(0,14);"></button>
+    <button class="trackNode" id="015" onclick="toggleNode(0,15);"></button>
     <br>
 
     <!-- Track 1 -->
-    <button class="trackNode4n" id="1_0" onclick="toggleNodeState(1,0);"></button>
-    <button class="trackNode" id="1_1" onclick="toggleNodeState(1,1);"></button>
-    <button class="trackNode" id="1_2" onclick="toggleNodeState(1,2);"></button>
-    <button class="trackNode" id="1_3" onclick="toggleNodeState(1,3);"></button>
-    <button class="trackNode4n" id="1_4" onclick="toggleNodeState(1,4);"></button>
-    <button class="trackNode" id="1_5" onclick="toggleNodeState(1,5);"></button>
-    <button class="trackNode" id="1_6" onclick="toggleNodeState(1,6);"></button>
-    <button class="trackNode" id="1_7" onclick="toggleNodeState(1,7);"></button>
-    <button class="trackNode4n" id="1_8" onclick="toggleNodeState(1,8);"></button>
-    <button class="trackNode" id="1_9" onclick="toggleNodeState(1,9);"></button>
-    <button class="trackNode" id="1_10" onclick="toggleNodeState(1,10);"></button>
-    <button class="trackNode" id="1_11" onclick="toggleNodeState(1,11);"></button>
-    <button class="trackNode4n" id="1_12" onclick="toggleNodeState(1,12);"></button>
-    <button class="trackNode" id="1_13" onclick="toggleNodeState(1,13);"></button>
-    <button class="trackNode" id="1_14" onclick="toggleNodeState(1,14);"></button>
-    <button class="trackNode" id="1_15" onclick="toggleNodeState(1,15);"></button>
+    <button class="trackNode4n" id="10" onclick="toggleNode4n(1,0);"></button>
+    <button class="trackNode" id="11" onclick="toggleNode(1,1);"></button>
+    <button class="trackNode" id="12" onclick="toggleNode(1,2);"></button>
+    <button class="trackNode" id="13" onclick="toggleNode(1,3);"></button>
+    <button class="trackNode4n" id="14" onclick="toggleNode4n(1,4);"></button>
+    <button class="trackNode" id="15" onclick="toggleNode(1,5);"></button>
+    <button class="trackNode" id="16" onclick="toggleNode(1,6);"></button>
+    <button class="trackNode" id="17" onclick="toggleNode(1,7);"></button>
+    <button class="trackNode4n" id="18" onclick="toggleNode4n(1,8);"></button>
+    <button class="trackNode" id="19" onclick="toggleNode(1,9);"></button>
+    <button class="trackNode" id="110" onclick="toggleNode(1,10);"></button>
+    <button class="trackNode" id="111" onclick="toggleNode(1,11);"></button>
+    <button class="trackNode4n" id="112" onclick="toggleNode4n(1,12);"></button>
+    <button class="trackNode" id="113" onclick="toggleNode(1,13);"></button>
+    <button class="trackNode" id="114" onclick="toggleNode(1,14);"></button>
+    <button class="trackNode" id="115" onclick="toggleNode(1,15);"></button>
     <br>
 
     <!-- Track 2 -->
-    <button class="trackNode4n" id="2_0" onclick="toggleNodeState(2,0);"></button>
-    <button class="trackNode" id="2_1" onclick="toggleNodeState(2,1);"></button>
-    <button class="trackNode" id="2_2" onclick="toggleNodeState(2,2);"></button>
-    <button class="trackNode" id="2_3" onclick="toggleNodeState(2,3);"></button>
-    <button class="trackNode4n" id="2_4" onclick="toggleNodeState(2,4);"></button>
-    <button class="trackNode" id="2_5" onclick="toggleNodeState(2,5);"></button>
-    <button class="trackNode" id="2_6" onclick="toggleNodeState(2,6);"></button>
-    <button class="trackNode" id="2_7" onclick="toggleNodeState(2,7);"></button>
-    <button class="trackNode4n" id="2_8" onclick="toggleNodeState(2,8);"></button>
-    <button class="trackNode" id="2_9" onclick="toggleNodeState(2,9);"></button>
-    <button class="trackNode" id="2_10" onclick="toggleNodeState(2,10);"></button>
-    <button class="trackNode" id="2_11" onclick="toggleNodeState(2,11);"></button>
-    <button class="trackNode4n" id="2_12" onclick="toggleNodeState(2,12);"></button>
-    <button class="trackNode" id="2_13" onclick="toggleNodeState(2,13);"></button>
-    <button class="trackNode" id="2_14" onclick="toggleNodeState(2,14);"></button>
-    <button class="trackNode" id="2_15" onclick="toggleNodeState(2,15);"></button>
+    <button class="trackNode4n" id="20" onclick="toggleNode4n(2,0);"></button>
+    <button class="trackNode" id="21" onclick="toggleNode(2,1);"></button>
+    <button class="trackNode" id="22" onclick="toggleNode(2,2);"></button>
+    <button class="trackNode" id="23" onclick="toggleNode(2,3);"></button>
+    <button class="trackNode4n" id="24" onclick="toggleNode4n(2,4);"></button>
+    <button class="trackNode" id="25" onclick="toggleNode(2,5);"></button>
+    <button class="trackNode" id="26" onclick="toggleNode(2,6);"></button>
+    <button class="trackNode" id="27" onclick="toggleNode(2,7);"></button>
+    <button class="trackNode4n" id="28" onclick="toggleNode4n(2,8);"></button>
+    <button class="trackNode" id="29" onclick="toggleNode(2,9);"></button>
+    <button class="trackNode" id="210" onclick="toggleNode(2,10);"></button>
+    <button class="trackNode" id="211" onclick="toggleNode(2,11);"></button>
+    <button class="trackNode4n" id="212" onclick="toggleNode4n(2,12);"></button>
+    <button class="trackNode" id="213" onclick="toggleNode(2,13);"></button>
+    <button class="trackNode" id="214" onclick="toggleNode(2,14);"></button>
+    <button class="trackNode" id="215" onclick="toggleNode(2,15);"></button>
     <br>
 
     <!-- Track 3 -->
-    <button class="trackNode4n" id="3_0" onclick="toggleNodeState(3,0);"></button>
-    <button class="trackNode" id="3_1" onclick="toggleNodeState(3,1);"></button>
-    <button class="trackNode" id="3_2" onclick="toggleNodeState(3,2);"></button>
-    <button class="trackNode" id="3_3" onclick="toggleNodeState(3,3);"></button>
-    <button class="trackNode4n" id="3_4" onclick="toggleNodeState(3,4);"></button>
-    <button class="trackNode" id="3_5" onclick="toggleNodeState(3,5);"></button>
-    <button class="trackNode" id="3_6" onclick="toggleNodeState(3,6);"></button>
-    <button class="trackNode" id="3_7" onclick="toggleNodeState(3,7);"></button>
-    <button class="trackNode4n" id="3_8" onclick="toggleNodeState(3,8);"></button>
-    <button class="trackNode" id="3_9" onclick="toggleNodeState(3,9);"></button>
-    <button class="trackNode" id="3_10" onclick="toggleNodeState(3,10);"></button>
-    <button class="trackNode" id="3_11" onclick="toggleNodeState(3,11);"></button>
-    <button class="trackNode4n" id="3_12" onclick="toggleNodeState(3,12);"></button>
-    <button class="trackNode" id="3_13" onclick="toggleNodeState(3,13);"></button>
-    <button class="trackNode" id="3_14" onclick="toggleNodeState(3,14);"></button>
-    <button class="trackNode" id="3_15" onclick="toggleNodeState(3,15);"></button>
+    <button class="trackNode4n" id="30" onclick="toggleNode4n(3,0);"></button>
+    <button class="trackNode" id="31" onclick="toggleNode(3,1);"></button>
+    <button class="trackNode" id="32" onclick="toggleNode(3,2);"></button>
+    <button class="trackNode" id="33" onclick="toggleNode(3,3);"></button>
+    <button class="trackNode4n" id="34" onclick="toggleNode4n(3,4);"></button>
+    <button class="trackNode" id="35" onclick="toggleNode(3,5);"></button>
+    <button class="trackNode" id="36" onclick="toggleNode(3,6);"></button>
+    <button class="trackNode" id="37" onclick="toggleNode(3,7);"></button>
+    <button class="trackNode4n" id="38" onclick="toggleNode4n(3,8);"></button>
+    <button class="trackNode" id="39" onclick="toggleNode(3,9);"></button>
+    <button class="trackNode" id="310" onclick="toggleNode(3,10);"></button>
+    <button class="trackNode" id="311" onclick="toggleNode(3,11);"></button>
+    <button class="trackNode4n" id="312" onclick="toggleNode4n(3,12);"></button>
+    <button class="trackNode" id="313" onclick="toggleNode(3,13);"></button>
+    <button class="trackNode" id="314" onclick="toggleNode(3,14);"></button>
+    <button class="trackNode" id="315" onclick="toggleNode(3,15);"></button>
     <br>
 
     <!-- Track 4 -->
-    <button class="trackNode4n" id="4_0" onclick="toggleNodeState(4,0);"></button>
-    <button class="trackNode" id="4_1" onclick="toggleNodeState(4,1);"></button>
-    <button class="trackNode" id="4_2" onclick="toggleNodeState(4,2);"></button>
-    <button class="trackNode" id="4_3" onclick="toggleNodeState(4,3);"></button>
-    <button class="trackNode4n" id="4_4" onclick="toggleNodeState(4,4);"></button>
-    <button class="trackNode" id="4_5" onclick="toggleNodeState(4,5);"></button>
-    <button class="trackNode" id="4_6" onclick="toggleNodeState(4,6);"></button>
-    <button class="trackNode" id="4_7" onclick="toggleNodeState(4,7);"></button>
-    <button class="trackNode4n" id="4_8" onclick="toggleNodeState(4,8);"></button>
-    <button class="trackNode" id="4_9" onclick="toggleNodeState(4,9);"></button>
-    <button class="trackNode" id="4_10" onclick="toggleNodeState(4,10);"></button>
-    <button class="trackNode" id="4_11" onclick="toggleNodeState(4,11);"></button>
-    <button class="trackNode4n" id="4_12" onclick="toggleNodeState(4,12);"></button>
-    <button class="trackNode" id="4_13" onclick="toggleNodeState(4,13);"></button>
-    <button class="trackNode" id="4_14" onclick="toggleNodeState(4,14);"></button>
-    <button class="trackNode" id="4_15" onclick="toggleNodeState(4,15);"></button>
+    <button class="trackNode4n" id="40" onclick="toggleNode4n(4,0);"></button>
+    <button class="trackNode" id="41" onclick="toggleNode(4,1);"></button>
+    <button class="trackNode" id="42" onclick="toggleNode(4,2);"></button>
+    <button class="trackNode" id="43" onclick="toggleNode(4,3);"></button>
+    <button class="trackNode4n" id="44" onclick="toggleNode4n(4,4);"></button>
+    <button class="trackNode" id="45" onclick="toggleNode(4,5);"></button>
+    <button class="trackNode" id="46" onclick="toggleNode(4,6);"></button>
+    <button class="trackNode" id="47" onclick="toggleNode(4,7);"></button>
+    <button class="trackNode4n" id="48" onclick="toggleNode4n(4,8);"></button>
+    <button class="trackNode" id="49" onclick="toggleNode(4,9);"></button>
+    <button class="trackNode" id="410" onclick="toggleNode(4,10);"></button>
+    <button class="trackNode" id="411" onclick="toggleNode(4,11);"></button>
+    <button class="trackNode4n" id="412" onclick="toggleNode4n(4,12);"></button>
+    <button class="trackNode" id="413" onclick="toggleNode(4,13);"></button>
+    <button class="trackNode" id="414" onclick="toggleNode(4,14);"></button>
+    <button class="trackNode" id="415" onclick="toggleNode(4,15);"></button>
     <br>
 
     <!-- Track 5 -->
-    <button class="trackNode4n" id="5_0" onclick="toggleNodeState(5,0);"></button>
-    <button class="trackNode" id="5_1" onclick="toggleNodeState(5,1);"></button>
-    <button class="trackNode" id="5_2" onclick="toggleNodeState(5,2);"></button>
-    <button class="trackNode" id="5_3" onclick="toggleNodeState(5,3);"></button>
-    <button class="trackNode4n" id="5_4" onclick="toggleNodeState(5,4);"></button>
-    <button class="trackNode" id="5_5" onclick="toggleNodeState(5,5);"></button>
-    <button class="trackNode" id="5_6" onclick="toggleNodeState(5,6);"></button>
-    <button class="trackNode" id="5_7" onclick="toggleNodeState(5,7);"></button>
-    <button class="trackNode4n" id="5_8" onclick="toggleNodeState(5,8);"></button>
-    <button class="trackNode" id="5_9" onclick="toggleNodeState(5,9);"></button>
-    <button class="trackNode" id="5_10" onclick="toggleNodeState(5,10);"></button>
-    <button class="trackNode" id="5_11" onclick="toggleNodeState(5,11);"></button>
-    <button class="trackNode4n" id="5_12" onclick="toggleNodeState(5,12);"></button>
-    <button class="trackNode" id="5_13" onclick="toggleNodeState(5,13);"></button>
-    <button class="trackNode" id="5_14" onclick="toggleNodeState(5,14);"></button>
-    <button class="trackNode" id="5_15" onclick="toggleNodeState(5,15);"></button>
+    <button class="trackNode4n" id="50" onclick="toggleNode4n(5,0);"></button>
+    <button class="trackNode" id="51" onclick="toggleNode(5,1);"></button>
+    <button class="trackNode" id="52" onclick="toggleNode(5,2);"></button>
+    <button class="trackNode" id="53" onclick="toggleNode(5,3);"></button>
+    <button class="trackNode4n" id="54" onclick="toggleNode4n(5,4);"></button>
+    <button class="trackNode" id="55" onclick="toggleNode(5,5);"></button>
+    <button class="trackNode" id="56" onclick="toggleNode(5,6);"></button>
+    <button class="trackNode" id="57" onclick="toggleNode(5,7);"></button>
+    <button class="trackNode4n" id="58" onclick="toggleNode4n(5,8);"></button>
+    <button class="trackNode" id="59" onclick="toggleNode(5,9);"></button>
+    <button class="trackNode" id="510" onclick="toggleNode(5,10);"></button>
+    <button class="trackNode" id="511" onclick="toggleNode(5,11);"></button>
+    <button class="trackNode4n" id="512" onclick="toggleNode4n(5,12);"></button>
+    <button class="trackNode" id="513" onclick="toggleNode(5,13);"></button>
+    <button class="trackNode" id="514" onclick="toggleNode(5,14);"></button>
+    <button class="trackNode" id="515" onclick="toggleNode(5,15);"></button>
     <br>
 
     <!-- Track 6 -->
-    <button class="trackNode4n" id="6_0" onclick="toggleNodeState(6,0);"></button>
-    <button class="trackNode" id="6_1" onclick="toggleNodeState(6,1);"></button>
-    <button class="trackNode" id="6_2" onclick="toggleNodeState(6,2);"></button>
-    <button class="trackNode" id="6_3" onclick="toggleNodeState(6,3);"></button>
-    <button class="trackNode4n" id="6_4" onclick="toggleNodeState(6,4);"></button>
-    <button class="trackNode" id="6_5" onclick="toggleNodeState(6,5);"></button>
-    <button class="trackNode" id="6_6" onclick="toggleNodeState(6,6);"></button>
-    <button class="trackNode" id="6_7" onclick="toggleNodeState(6,7);"></button>
-    <button class="trackNode4n" id="6_8" onclick="toggleNodeState(6,8);"></button>
-    <button class="trackNode" id="6_9" onclick="toggleNodeState(6,9);"></button>
-    <button class="trackNode" id="6_10" onclick="toggleNodeState(6,10);"></button>
-    <button class="trackNode" id="6_11" onclick="toggleNodeState(6,11);"></button>
-    <button class="trackNode4n" id="6_12" onclick="toggleNodeState(6,12);"></button>
-    <button class="trackNode" id="6_13" onclick="toggleNodeState(6,13);"></button>
-    <button class="trackNode" id="6_14" onclick="toggleNodeState(6,14);"></button>
-    <button class="trackNode" id="6_15" onclick="toggleNodeState(6,15);"></button>
+    <button class="trackNode4n" id="60" onclick="toggleNode4n(6,0);"></button>
+    <button class="trackNode" id="61" onclick="toggleNode(6,1);"></button>
+    <button class="trackNode" id="62" onclick="toggleNode(6,2);"></button>
+    <button class="trackNode" id="63" onclick="toggleNode(6,3);"></button>
+    <button class="trackNode4n" id="64" onclick="toggleNode4n(6,4);"></button>
+    <button class="trackNode" id="65" onclick="toggleNode(6,5);"></button>
+    <button class="trackNode" id="66" onclick="toggleNode(6,6);"></button>
+    <button class="trackNode" id="67" onclick="toggleNode(6,7);"></button>
+    <button class="trackNode4n" id="68" onclick="toggleNode4n(6,8);"></button>
+    <button class="trackNode" id="69" onclick="toggleNode(6,9);"></button>
+    <button class="trackNode" id="610" onclick="toggleNode(6,10);"></button>
+    <button class="trackNode" id="611" onclick="toggleNode(6,11);"></button>
+    <button class="trackNode4n" id="612" onclick="toggleNode4n(6,12);"></button>
+    <button class="trackNode" id="613" onclick="toggleNode(6,13);"></button>
+    <button class="trackNode" id="614" onclick="toggleNode(6,14);"></button>
+    <button class="trackNode" id="615" onclick="toggleNode(6,15);"></button>
     <br>
 
     <!-- Track 7 -->
-    <button class="trackNode4n" id="7_0" onclick="toggleNodeState(7,0);"></button>
-    <button class="trackNode" id="7_1" onclick="toggleNodeState(7,1);"></button>
-    <button class="trackNode" id="7_2" onclick="toggleNodeState(7,2);"></button>
-    <button class="trackNode" id="7_3" onclick="toggleNodeState(7,3);"></button>
-    <button class="trackNode4n" id="7_4" onclick="toggleNodeState(7,4);"></button>
-    <button class="trackNode" id="7_5" onclick="toggleNodeState(7,5);"></button>
-    <button class="trackNode" id="7_6" onclick="toggleNodeState(7,6);"></button>
-    <button class="trackNode" id="7_7" onclick="toggleNodeState(7,7);"></button>
-    <button class="trackNode4n" id="7_8" onclick="toggleNodeState(7,8);"></button>
-    <button class="trackNode" id="7_9" onclick="toggleNodeState(7,9);"></button>
-    <button class="trackNode" id="7_10" onclick="toggleNodeState(7,10);"></button>
-    <button class="trackNode" id="7_11" onclick="toggleNodeState(7,11);"></button>
-    <button class="trackNode4n" id="7_12" onclick="toggleNodeState(7,12);"></button>
-    <button class="trackNode" id="7_13" onclick="toggleNodeState(7,13);"></button>
-    <button class="trackNode" id="7_14" onclick="toggleNodeState(7,14);"></button>
-    <button class="trackNode" id="7_15" onclick="toggleNodeState(7,15);"></button>
+    <button class="trackNode4n" id="70" onclick="toggleNode4n(7,0);"></button>
+    <button class="trackNode" id="71" onclick="toggleNode(7,1);"></button>
+    <button class="trackNode" id="72" onclick="toggleNode(7,2);"></button>
+    <button class="trackNode" id="73" onclick="toggleNode(7,3);"></button>
+    <button class="trackNode4n" id="74" onclick="toggleNode4n(7,4);"></button>
+    <button class="trackNode" id="75" onclick="toggleNode(7,5);"></button>
+    <button class="trackNode" id="76" onclick="toggleNode(7,6);"></button>
+    <button class="trackNode" id="77" onclick="toggleNode(7,7);"></button>
+    <button class="trackNode4n" id="78" onclick="toggleNode4n(7,8);"></button>
+    <button class="trackNode" id="79" onclick="toggleNode(7,9);"></button>
+    <button class="trackNode" id="710" onclick="toggleNode(7,10);"></button>
+    <button class="trackNode" id="711" onclick="toggleNode(7,11);"></button>
+    <button class="trackNode4n" id="712" onclick="toggleNode4n(7,12);"></button>
+    <button class="trackNode" id="713" onclick="toggleNode(7,13);"></button>
+    <button class="trackNode" id="714" onclick="toggleNode(7,14);"></button>
+    <button class="trackNode" id="715" onclick="toggleNode(7,15);"></button>
     <br>
 
     <!-- Track 8 -->
-    <button class="trackNode4n" id="8_0" onclick="toggleNodeState(8,0);"></button>
-    <button class="trackNode" id="8_1" onclick="toggleNodeState(8,1);"></button>
-    <button class="trackNode" id="8_2" onclick="toggleNodeState(8,2);"></button>
-    <button class="trackNode" id="8_3" onclick="toggleNodeState(8,3);"></button>
-    <button class="trackNode4n" id="8_4" onclick="toggleNodeState(8,4);"></button>
-    <button class="trackNode" id="8_5" onclick="toggleNodeState(8,5);"></button>
-    <button class="trackNode" id="8_6" onclick="toggleNodeState(8,6);"></button>
-    <button class="trackNode" id="8_7" onclick="toggleNodeState(8,7);"></button>
-    <button class="trackNode4n" id="8_8" onclick="toggleNodeState(8,8);"></button>
-    <button class="trackNode" id="8_9" onclick="toggleNodeState(8,9);"></button>
-    <button class="trackNode" id="8_10" onclick="toggleNodeState(8,10);"></button>
-    <button class="trackNode" id="8_11" onclick="toggleNodeState(8,11);"></button>
-    <button class="trackNode4n" id="8_12" onclick="toggleNodeState(8,12);"></button>
-    <button class="trackNode" id="8_13" onclick="toggleNodeState(8,13);"></button>
-    <button class="trackNode" id="8_14" onclick="toggleNodeState(8,14);"></button>
-    <button class="trackNode" id="8_15" onclick="toggleNodeState(8,15);"></button>
+    <button class="trackNode4n" id="80" onclick="toggleNode4n(8,0);"></button>
+    <button class="trackNode" id="81" onclick="toggleNode(8,1);"></button>
+    <button class="trackNode" id="82" onclick="toggleNode(8,2);"></button>
+    <button class="trackNode" id="83" onclick="toggleNode(8,3);"></button>
+    <button class="trackNode4n" id="84" onclick="toggleNode4n(8,4);"></button>
+    <button class="trackNode" id="85" onclick="toggleNode(8,5);"></button>
+    <button class="trackNode" id="86" onclick="toggleNode(8,6);"></button>
+    <button class="trackNode" id="87" onclick="toggleNode(8,7);"></button>
+    <button class="trackNode4n" id="88" onclick="toggleNode4n(8,8);"></button>
+    <button class="trackNode" id="89" onclick="toggleNode(8,9);"></button>
+    <button class="trackNode" id="810" onclick="toggleNode(8,10);"></button>
+    <button class="trackNode" id="811" onclick="toggleNode(8,11);"></button>
+    <button class="trackNode4n" id="812" onclick="toggleNode4n(8,12);"></button>
+    <button class="trackNode" id="813" onclick="toggleNode(8,13);"></button>
+    <button class="trackNode" id="814" onclick="toggleNode(8,14);"></button>
+    <button class="trackNode" id="815" onclick="toggleNode(8,15);"></button>
     <br>
 
     <!-- Track 9 -->
-    <button class="trackNode4n" id="9_0" onclick="toggleNodeState(9,0);"></button>
-    <button class="trackNode" id="9_1" onclick="toggleNodeState(9,1);"></button>
-    <button class="trackNode" id="9_2" onclick="toggleNodeState(9,2);"></button>
-    <button class="trackNode" id="9_3" onclick="toggleNodeState(9,3);"></button>
-    <button class="trackNode4n" id="9_4" onclick="toggleNodeState(9,4);"></button>
-    <button class="trackNode" id="9_5" onclick="toggleNodeState(9,5);"></button>
-    <button class="trackNode" id="9_6" onclick="toggleNodeState(9,6);"></button>
-    <button class="trackNode" id="9_7" onclick="toggleNodeState(9,7);"></button>
-    <button class="trackNode4n" id="9_8" onclick="toggleNodeState(9,8);"></button>
-    <button class="trackNode" id="9_9" onclick="toggleNodeState(9,9);"></button>
-    <button class="trackNode" id="9_10" onclick="toggleNodeState(9,10);"></button>
-    <button class="trackNode" id="9_11" onclick="toggleNodeState(9,11);"></button>
-    <button class="trackNode4n" id="9_12" onclick="toggleNodeState(9,12);"></button>
-    <button class="trackNode" id="9_13" onclick="toggleNodeState(9,13);"></button>
-    <button class="trackNode" id="9_14" onclick="toggleNodeState(9,14);"></button>
-    <button class="trackNode" id="9_15" onclick="toggleNodeState(9,15);"></button>
+    <button class="trackNode4n" id="90" onclick="toggleNode4n(9,0);"></button>
+    <button class="trackNode" id="91" onclick="toggleNode(9,1);"></button>
+    <button class="trackNode" id="92" onclick="toggleNode(9,2);"></button>
+    <button class="trackNode" id="93" onclick="toggleNode(9,3);"></button>
+    <button class="trackNode4n" id="94" onclick="toggleNode4n(9,4);"></button>
+    <button class="trackNode" id="95" onclick="toggleNode(9,5);"></button>
+    <button class="trackNode" id="96" onclick="toggleNode(9,6);"></button>
+    <button class="trackNode" id="97" onclick="toggleNode(9,7);"></button>
+    <button class="trackNode4n" id="98" onclick="toggleNode4n(9,8);"></button>
+    <button class="trackNode" id="99" onclick="toggleNode(9,9);"></button>
+    <button class="trackNode" id="910" onclick="toggleNode(9,10);"></button>
+    <button class="trackNode" id="911" onclick="toggleNode(9,11);"></button>
+    <button class="trackNode4n" id="912" onclick="toggleNode4n(9,12);"></button>
+    <button class="trackNode" id="913" onclick="toggleNode(9,13);"></button>
+    <button class="trackNode" id="914" onclick="toggleNode(9,14);"></button>
+    <button class="trackNode" id="915" onclick="toggleNode(9,15);"></button>
     <br><hr class="lineHR"/>
 
     <div class="metronomeNode" id="m0" value="0"></div>

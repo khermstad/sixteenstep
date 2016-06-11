@@ -49,6 +49,7 @@ function getNodeState(track, beat){
     return nodeState[track][beat];
 }
 
+// NEVER CALLED ON ITS OWN, only through other methods with permission.
 function setNodeState(track, beat, newNodeState){
     nodeState[track][beat] = newNodeState;
 }
@@ -72,7 +73,12 @@ function triggerActiveNodes() {
  */
 
 var masterLoop = new Tone.Loop(function(time) {
+
+    // TODO: extract ui methods in loop
+    // ui methods
     setMetronome();
+
+    // logic methods
     triggerActiveNodes();
     console.log(currentBeat);
     updateCurrentBeat();
