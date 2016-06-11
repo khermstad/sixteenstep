@@ -100,61 +100,61 @@ function stopLoop(){
  * @type {Tone}
  */
 
-var t0sampler = new Tone.Sampler({
+var t0 = new Tone.Sampler({
     A : {
         1 : "./samplebank/roland_TR_808/Bassdrum-01.wav",
     }
 }).toMaster();
 
-var t1sampler = new Tone.Sampler({
+var t1 = new Tone.Sampler({
     A : {
         1 : "./samplebank/roland_TR_808/Clap.wav"
     }
 }).toMaster();
 
-var t2sampler = new Tone.Sampler({
+var t2 = new Tone.Sampler({
     A : {
         1 : "./samplebank/roland_TR_808/Snaredrum.wav"
     }
 }).toMaster();
 
-var t3sampler = new Tone.Sampler({
+var t3 = new Tone.Sampler({
     A : {
         1 : "./samplebank/roland_TR_808/HatOpen.wav"
     }
 }).toMaster();
 
-var t4sampler = new Tone.Sampler({
+var t4 = new Tone.Sampler({
     A : {
         1 : "./samplebank/roland_TR_808/HatClosed.wav",
     }
 }).toMaster();
 
-var t5sampler = new Tone.Sampler({
+var t5 = new Tone.Sampler({
     A : {
         1 : "./samplebank/roland_TR_808/TomH.wav"
     }
 }).toMaster();
 
-var t6sampler = new Tone.Sampler({
+var t6 = new Tone.Sampler({
     A : {
         1 : "./samplebank/roland_TR_808/TomL.wav"
     }
 }).toMaster();
 
-var t7sampler = new Tone.Sampler({
+var t7 = new Tone.Sampler({
     A : {
         1 : "./samplebank/roland_TR_808/Cowbell.wav"
     }
 }).toMaster();
 
-var t8sampler = new Tone.Sampler({
+var t8 = new Tone.Sampler({
     A : {
         1 : "./samplebank/roland_TR_808/Crash-01.wav"
     }
 }).toMaster();
 
-var t9sampler = new Tone.Sampler({
+var t9 = new Tone.Sampler({
     A : {
         1 : "./samplebank/roland_TR_808/Crash-02.wav"
     }
@@ -164,9 +164,7 @@ var t9sampler = new Tone.Sampler({
 // to determine which nodes are on. To add a new track to the sampler, simply add the sampler to this array.
 // The only code that should be changed when adding a sampler is in this section.  Code should be modular.
 
-samplerArray = [t0sampler, t1sampler, t2sampler, t3sampler,
-                t4sampler, t5sampler, t6sampler, t7sampler,
-                t8sampler, t9sampler];
+samplerArray = [t0, t1, t2, t3, t4, t5, t6, t7, t8, t9];
 
 // default currentSampleSet == "A.1"
 function setCurrentSampleSet(newSampleSet){
