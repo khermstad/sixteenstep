@@ -48,7 +48,7 @@
 /* .sequencerPanel: generic panel style for sequencer panels*/
 .sequencerPanel{
     width: 395px;
-    height: 265px;
+    height: 285px;
     border: solid;
     border-width: 1px;
     border-radius: 10px;
@@ -60,7 +60,7 @@
 }
 /* .controlPanel: styled panel for main controls (play/pause, etc) */
 .controlPanel{
-    width: 395px;
+    width: 570px;
     height: 75px;
     border: solid;
     border-width: 1px;
@@ -149,6 +149,17 @@
 .controlPanelCircleButton#resetButton:hover{
     background-color: 	#8B0000; /* darkred */
 }
+
+/* .controlPanelCircleButton#808btn: */
+.controlPanelCircleButton#808btn{
+    background-color: black; /* black */
+}
+
+/* .controlPanelCircleButton#909btn: */
+.controlPanelCircleButton#909btn{
+    background-color: black; /* black */
+}
+
 
 /* HR line style */
 .lineHR{
