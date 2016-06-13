@@ -102,6 +102,7 @@ function stopLoop(){
  * Each sampler holds "sets" of drum samples.  A.1 = first set, A.2 = second set, etc;
  *
  * A.1: Roland TR 808 - samplebank/roland_TR_808/
+ * A.2: Roland TR 909 - samplebank/roland_TR_909/
  *
  * @type {Tone}
  */
@@ -109,60 +110,71 @@ function stopLoop(){
 var t0 = new Tone.Sampler({
     A : {
         1 : "./samplebank/roland_TR_808/Bassdrum-01.wav",
+        2 : "./samplebank/roland_TR_909/Bassdrum-01.wav"
     }
 }).toMaster();
 
 var t1 = new Tone.Sampler({
     A : {
-        1 : "./samplebank/roland_TR_808/Clap.wav"
+        1 : "./samplebank/roland_TR_808/Clap.wav",
+        2 : "./samplebank/roland_TR_909/Clap.wav"
     }
 }).toMaster();
 
 var t2 = new Tone.Sampler({
     A : {
-        1 : "./samplebank/roland_TR_808/Snaredrum.wav"
+        1 : "./samplebank/roland_TR_808/Snaredrum.wav",
+        2 : "./samplebank/roland_TR_909/Snaredrum.wav"
+
     }
 }).toMaster();
 
 var t3 = new Tone.Sampler({
     A : {
-        1 : "./samplebank/roland_TR_808/HatOpen.wav"
+        1 : "./samplebank/roland_TR_808/HatOpen.wav",
+        2 : "./samplebank/roland_TR_909/HatOpen.wav"
     }
 }).toMaster();
 
 var t4 = new Tone.Sampler({
     A : {
         1 : "./samplebank/roland_TR_808/HatClosed.wav",
+        2 : "./samplebank/roland_TR_909/HatClosed.wav"
     }
 }).toMaster();
 
 var t5 = new Tone.Sampler({
     A : {
-        1 : "./samplebank/roland_TR_808/TomH.wav"
+        1 : "./samplebank/roland_TR_808/TomH.wav",
+        2 : "./samplebank/roland_TR_909/TomH.wav"
     }
 }).toMaster();
 
 var t6 = new Tone.Sampler({
     A : {
-        1 : "./samplebank/roland_TR_808/TomL.wav"
+        1 : "./samplebank/roland_TR_808/TomL.wav",
+        2 : "./samplebank/roland_TR_909/TomL.wav"
     }
 }).toMaster();
 
 var t7 = new Tone.Sampler({
     A : {
-        1 : "./samplebank/roland_TR_808/Cowbell.wav"
+        1 : "./samplebank/roland_TR_808/Cowbell.wav",
+        2 : "./samplebank/roland_TR_909/Rimshot.wav"
     }
 }).toMaster();
 
 var t8 = new Tone.Sampler({
     A : {
-        1 : "./samplebank/roland_TR_808/Crash-01.wav"
+        1 : "./samplebank/roland_TR_808/Crash-01.wav",
+        2 : "./samplebank/roland_TR_909/Crash.wav"
     }
 }).toMaster();
 
 var t9 = new Tone.Sampler({
     A : {
-        1 : "./samplebank/roland_TR_808/Crash-02.wav"
+        1 : "./samplebank/roland_TR_808/Crash-02.wav",
+        2 : "./samplebank/roland_TR_909/Ride.wav"
     }
 }).toMaster();
 
@@ -175,6 +187,7 @@ samplerArray = [t0, t1, t2, t3, t4, t5, t6, t7, t8, t9];
 // default currentSampleSet == "A.1"
 function setCurrentSampleSet(newSampleSet){
     currentSampleSet = newSampleSet;
+    console.log(currentSampleSet);
 }
 
 // updateCurrentBeat():
