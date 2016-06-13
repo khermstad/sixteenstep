@@ -234,10 +234,17 @@
     <input type="button" class="controlPanelCircleButton" id="bpmDec" onclick="decreaseBpm();" value="BPM -"/>
     <input type="button" class="controlPanelCircleButton" id="volInc" onclick="increaseVolume();" value="VOL +"/>
     <input type="button" class="controlPanelCircleButton" id="volDec" onclick="decreaseVolume();" value="VOL -"/>
+    <button class="controlPanelCircleButton" id="resetButton" onclick="reset();">RESET</button>
+
+    <select name='dropdownCurrentSet' onchange='currentSampleSet = this.value;'>
+        <option value='A.1'>Roland TR-808</option>
+        <option value='A.2'>Roland TR-909</option>
+        <option value='A.3'>Casio RZ-1</option>
+    </select>
 </div>
 <br>
-<center>
-<button class="controlPanelCircleButton" id="resetButton" onclick="reset();">RESET</button>
-</center>
+
+
+
 </body>
 </html>
