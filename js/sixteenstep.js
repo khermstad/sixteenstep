@@ -110,21 +110,24 @@ function stopLoop(){
 var t0 = new Tone.Sampler({
     A : {
         1 : "./samplebank/roland_TR_808/Bassdrum-01.wav",
-        2 : "./samplebank/roland_TR_909/Bassdrum-01.wav"
+        2 : "./samplebank/roland_TR_909/Bassdrum-01.wav",
+        3 : "./samplebank/casio_rz1/TomL.wav"
     }
 }).toMaster();
 
 var t1 = new Tone.Sampler({
     A : {
         1 : "./samplebank/roland_TR_808/Clap.wav",
-        2 : "./samplebank/roland_TR_909/Clap.wav"
+        2 : "./samplebank/roland_TR_909/Clap.wav",
+        3 : "./samplebank/casio_rz1/RimShot.wav"
     }
 }).toMaster();
 
 var t2 = new Tone.Sampler({
     A : {
         1 : "./samplebank/roland_TR_808/Snaredrum.wav",
-        2 : "./samplebank/roland_TR_909/Snaredrum.wav"
+        2 : "./samplebank/roland_TR_909/Snaredrum.wav",
+        3 : "./samplebank/casio_rz1/Snaredrum.wav"
 
     }
 }).toMaster();
@@ -132,49 +135,56 @@ var t2 = new Tone.Sampler({
 var t3 = new Tone.Sampler({
     A : {
         1 : "./samplebank/roland_TR_808/HatOpen.wav",
-        2 : "./samplebank/roland_TR_909/HatOpen.wav"
+        2 : "./samplebank/roland_TR_909/HatOpen.wav",
+        3 : "./samplebank/casio_rz1/HatOpen.wav"
     }
 }).toMaster();
 
 var t4 = new Tone.Sampler({
     A : {
         1 : "./samplebank/roland_TR_808/HatClosed.wav",
-        2 : "./samplebank/roland_TR_909/HatClosed.wav"
+        2 : "./samplebank/roland_TR_909/HatClosed.wav",
+        3 : "./samplebank/casio_rz1/HatClosed.wav"
     }
 }).toMaster();
 
 var t5 = new Tone.Sampler({
     A : {
         1 : "./samplebank/roland_TR_808/TomH.wav",
-        2 : "./samplebank/roland_TR_909/TomH.wav"
+        2 : "./samplebank/roland_TR_909/TomH.wav",
+        3 : "./samplebank/casio_rz1/TomH.wav"
     }
 }).toMaster();
 
 var t6 = new Tone.Sampler({
     A : {
         1 : "./samplebank/roland_TR_808/TomL.wav",
-        2 : "./samplebank/roland_TR_909/TomL.wav"
+        2 : "./samplebank/roland_TR_909/TomL.wav",
+        3 : "./samplebank/casio_rz1/TomM.wav"
     }
 }).toMaster();
 
 var t7 = new Tone.Sampler({
     A : {
         1 : "./samplebank/roland_TR_808/Cowbell.wav",
-        2 : "./samplebank/roland_TR_909/Rimshot.wav"
+        2 : "./samplebank/roland_TR_909/Rimshot.wav",
+        3 : "./samplebank/casio_rz1/Cowbell.wav"
     }
 }).toMaster();
 
 var t8 = new Tone.Sampler({
     A : {
         1 : "./samplebank/roland_TR_808/Crash-01.wav",
-        2 : "./samplebank/roland_TR_909/Crash.wav"
+        2 : "./samplebank/roland_TR_909/Crash.wav",
+        3 : "./samplebank/casio_rz1/Crash.wav"
     }
 }).toMaster();
 
 var t9 = new Tone.Sampler({
     A : {
         1 : "./samplebank/roland_TR_808/Crash-02.wav",
-        2 : "./samplebank/roland_TR_909/Ride.wav"
+        2 : "./samplebank/roland_TR_909/Ride.wav",
+        3 : "./samplebank/casio_rz1/Ride.wav"
     }
 }).toMaster();
 
