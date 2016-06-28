@@ -6,6 +6,8 @@
  *
  */
 
+Tone.Master.volume.value = -10;
+
 Tone.Transport.timeSignature = [4, 4];
 Tone.Transport.bpm.value = 120;
 var currentBeat = 0;
